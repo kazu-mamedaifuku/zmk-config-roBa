@@ -3,6 +3,15 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+/ {    
+  zip_temp_layer: zip_temp_layer {         
+
+compatible = "zmk,behavior-drag-scroll";         
+#binding-cells = <0>;        
+min-drag-distance = <12>;     
+
+};
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
